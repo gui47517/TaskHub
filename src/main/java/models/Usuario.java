@@ -7,7 +7,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name= "usuario")
 public class Usuario {
-@Id
+    @Id
     private int id;
     private String nome;
     private  String email;
@@ -20,3 +20,4 @@ public class Usuario {
         this.senha = senha;
     }
 }
+
