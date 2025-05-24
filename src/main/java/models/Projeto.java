@@ -4,6 +4,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 import java.time.LocalDate;
+
+@Entity
+@Table(name = "tarefa")
+public class Tarefa {
+
 @Entity
 @Table(name = "projeto")
 public class Projeto {
@@ -19,6 +24,4 @@ public class Projeto {
         this.dataInicio = dataInicio;
         this.dataPrevistaFim = dataPrevistaFim;
     }
-
-
 }
